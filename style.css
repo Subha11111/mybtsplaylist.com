@@ -59,7 +59,7 @@ button:hover {
 
 .bottom {
     position: absolute;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -133,7 +133,7 @@ input[type="range"] {
 }
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
 
 
     .t1 {
@@ -161,7 +161,6 @@ input[type="range"] {
         font-size: 10px;
         word-spacing: 2px;
     }
-    
 
     input[type="range"] {
         width: 200px;
@@ -173,13 +172,13 @@ input[type="range"] {
         color: transparent;
     }
 
-    .t1{
+    .t1 {
         width: 50px;
     }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 595px){
-    .t1{
+@media only screen and (min-width: 200px) and (max-width: 595px) {
+    .t1 {
         width: 50px;
     }
 }
