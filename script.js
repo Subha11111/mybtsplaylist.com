@@ -35,3 +35,40 @@ audioelement.addEventListener('timeupdate', ()=>{
 myProgressBar.addEventListener('change', ()=>{
     audioelement.currentTime = myProgressBar.value * audioelement.duration/100;
 })
+
+// 2ndsong
+
+console.log("BTS Songs");
+let songIndex1 = 0;
+let audioelement1 = new Audio('Music/dream.mp3');
+let masterplay1 = document.getElementById('masterplay1');
+let myProgressBar1 = document.getElementById('myProgressBar');
+let songs1 = [
+    {songName: "Dreamers", filePath: "Music/dream.mp3"},
+]
+
+//play/pause
+masterplay1.addEventListener('click', ()=>{
+    if(audioelement1.paused || audioelement1.currentTime<=0){
+        audioelement1.play();
+        masterplay1.classList.remove('play.png');
+        masterplay1.classList.add('img/4028568.png');
+    }
+    else{
+        audioelement1.pause();
+        masterplay1.classList.remove('4028568.png');
+        masterplay1.classList.add('img/play.png');
+    }
+})
+
+audioelement1.addEventListener('timeupdate', ()=>{
+    console.log('timeudate');
+    //updating seekbar
+    progress1 = parseInt((audioelement1.currentTime/audioelement1.duration)*100);
+    console.log(progress1);
+    myProgressBar1.value = progress1;
+})
+
+myProgressBar1.addEventListener('change', ()=>{
+    audioelement.currentTime = myProgressBar1.value * audioelement1.duration/100;
+})
