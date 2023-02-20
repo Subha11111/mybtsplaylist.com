@@ -40,11 +40,11 @@ myProgressBar.addEventListener('change', ()=>{
 
 console.log("BTS Songs");
 let songIndex1 = 0;
-let audioelement1 = new Audio('Music/dream.mp3');
+let audioelement1 = new Audio('Music/Run.mp3');
 let masterplay1 = document.getElementById('masterplay1');
 let myProgressBar1 = document.getElementById('myProgressBar');
 let songs1 = [
-    {songName: "Dreamers", filePath: "Music/dream.mp3"},
+    {songName: "Dreamers", filePath: "Music/Run.mp3"},
 ]
 
 //play/pause
