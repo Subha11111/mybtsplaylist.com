@@ -51,6 +51,14 @@ button {
     display: flex;
     word-spacing: 8px;
 }
+ 
+.maincontainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 450px;
+}
 
 button:hover {
     box-shadow: inset 120px 0 0 0 rgb(213, 188, 236);
@@ -142,6 +150,14 @@ input[type="range"] {
 
     .t1 {
         margin-top: 3px;
+    }
+
+    .maincontainer {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-left: 5px;
     }
 
     nav ul li {
